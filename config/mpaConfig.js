@@ -30,6 +30,7 @@ function getMpaConfig (appMpaSrc, isEnvDevelopment, isEnvProduction) {
         {},
         {
           inject: true,
+          chunks: [moduleName],
           template: `src/pages/${moduleName}/index.html`,
           filename: `${moduleName}/index.html`,
         },
